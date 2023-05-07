@@ -30,8 +30,8 @@ p {
     font-size: 15px;
 }
 
-.page {
-display: block;
+.container {
+display: flex;
 margin: auto;
 width: 90%;
 font-family: Verdana,sans-serif;
@@ -44,7 +44,46 @@ border-radius: 10px;
 border-style: solid;
 border-color: #272b30;
 border-width: 2px;
+flex-wrap: wrap;
+column-gap: 10px;
+align-items: baseline;
 }
+
+.boxfour {
+  display: grid;
+  width: 120px;
+  grid-template-columns: 60px 60px;
+  align-items: start;
+  justify-items: center;
+  justify-content: space-evenly;
+  background-color: #272b30;
+  border-color: #EBDBB2;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 3px;
+  padding-top: 6px;
+  float: left;
+}
+
+.boxone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 114px;
+  grid-template-columns: 60px;
+  align-self: center;
+  text-align: center;
+  background-color: #272b30;
+  border-color: #EBDBB2;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 3px;
+  float: left;
+}
+
 
 p-1 {
   display: block;
